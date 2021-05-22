@@ -14,6 +14,8 @@ Fedlet is a small web application that makes it easy to add SAML v2.0 service pr
  docker run -d -i -t --name fedlet -p 9090:8080 --env-file dk-bootstrap.env fedlet
  ```
 4. **Copy IDP metadata to the fedlet conf path**
+
+&nbsp;&nbsp;&ensp;export idp metadata from the identity provider.
 ```bash
  docker cp idp.xml fedlet:/root/fedlet/
  ```
