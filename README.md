@@ -29,3 +29,15 @@ If you want to change idp entity id, use following command and restart container
 ```bash
  docker restart fedlet
  ```
+## Change Logo
+If you would like to change logo of fedlet, use following commands
+
+> 👓**Note:** Image name should be PrimaryProductName.png
+
+```bash
+ docker cp PrimaryProductName.png fedlet:/root/images/PrimaryProductName.png
+ ```
+ 
+```bash
+ docker exec fedlet /bin/bash -c "sh /root/changeImage.sh"
+ ```
