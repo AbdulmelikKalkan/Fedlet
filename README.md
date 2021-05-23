@@ -1,6 +1,7 @@
 # Fedlet
 
 Fedlet is a small web application that makes it easy to add SAML v2.0 service provider (SP) capabilities to your Java web application.
+For more informaition, see this [resource](https://backstage.forgerock.com/docs/am/7.1/saml2-guide/saml2-implementation-fedlet.html).
 
 ## Setup
 1. **Build the fedlet container**
