@@ -1,4 +1,4 @@
-FROM tomcat:10-jdk16-openjdk-slim
+FROM tomcat:9.0.46-jdk16-openjdk-slim-buster
 
 RUN echo "fedlet.dataserv.local" > /etc/hostname
 RUN echo "PS1='\033[01;32m${debian_chroot:+($debian_chroot)}\u@\h\033[00m\]:\w\$'" >> /root/.bashrc
