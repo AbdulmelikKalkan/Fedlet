@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
     end
     config.vm.define "fedlet" do |fedlet|
         fedlet.vm.box = IMAGE_NAME
-        fedlet.vm.network "private_network", ip: "#{fedletip}"
+        #fedlet.vm.network "private_network", ip: "#{fedletip}"
         fedlet.vm.network "forwarded_port", guest: 8080, host: 8080, protocol: "tcp"
         fedlet.vm.hostname = "fedlet"
         fedlet.vm.provider "virtualbox" do |v|
